@@ -19,7 +19,6 @@
 		AC72218C23F4148F00CA2355 /* questionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC72218B23F4148F00CA2355 /* questionsViewController.swift */; };
 		AC9399A223F2E330002B3E07 /* homeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9399A123F2E330002B3E07 /* homeScreenViewController.swift */; };
 		AC9794C523F2F97400A0E74F /* registerStudyScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9794C423F2F97400A0E74F /* registerStudyScreenViewController.swift */; };
-		ACD7155523FBF46900FC955B /* MicrosoftAzureMobile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACD7155423FBF46900FC955B /* MicrosoftAzureMobile.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,7 +36,6 @@
 		AC72218B23F4148F00CA2355 /* questionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = questionsViewController.swift; sourceTree = "<group>"; };
 		AC9399A123F2E330002B3E07 /* homeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homeScreenViewController.swift; sourceTree = "<group>"; };
 		AC9794C423F2F97400A0E74F /* registerStudyScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = registerStudyScreenViewController.swift; sourceTree = "<group>"; };
-		ACD7155423FBF46900FC955B /* MicrosoftAzureMobile.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MicrosoftAzureMobile.framework; path = ../../../Downloads/MicrosoftAzureMobile.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,7 +43,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ACD7155523FBF46900FC955B /* MicrosoftAzureMobile.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -55,7 +52,6 @@
 		AC68530623F2AB07005E4755 = {
 			isa = PBXGroup;
 			children = (
-				ACD7155423FBF46900FC955B /* MicrosoftAzureMobile.framework */,
 				AC68531123F2AB07005E4755 /* Appceptability */,
 				AC68531023F2AB07005E4755 /* Products */,
 				ACD7155023FBEA6500FC955B /* Frameworks */,
@@ -330,6 +326,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6978N83FPY;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Appceptability",
+				);
 				INFOPLIST_FILE = Appceptability/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -348,6 +348,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6978N83FPY;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Appceptability",
+				);
 				INFOPLIST_FILE = Appceptability/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

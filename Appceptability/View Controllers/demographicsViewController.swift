@@ -9,7 +9,14 @@
 import UIKit
 
 class demographicsViewController: UIViewController {
-
+    
+    @IBOutlet weak var participantIDSwitch: UISwitch!
+    @IBOutlet weak var sampleIDSwitch: UISwitch!
+    @IBOutlet weak var ageSwitch: UISwitch!
+    @IBOutlet weak var locationSwitch: UISwitch!
+    @IBOutlet weak var allAboveSwitch: UISwitch!
+    @IBOutlet weak var saveAndContinueButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

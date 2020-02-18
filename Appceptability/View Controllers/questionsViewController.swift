@@ -9,7 +9,9 @@
 import UIKit
 
 class questionsViewController: UIViewController {
-
+    
+    @IBOutlet weak var saveAndContinueButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

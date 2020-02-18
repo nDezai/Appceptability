@@ -10,6 +10,12 @@ import UIKit
 
 class participantsAndSampleSizeViewController: UIViewController {
 
+    @IBOutlet weak var participantSlider: UISlider!
+    @IBOutlet weak var participantNumberTF: UITextField!
+    @IBOutlet weak var sampleSlider: UISlider!
+    @IBOutlet weak var sampleNumberTF: UITextField!
+    @IBOutlet weak var saveAndContinueButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
