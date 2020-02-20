@@ -45,7 +45,7 @@
                                     <color key="titleShadowColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="nAD-Hi-uxX" kind="show" identifier="welcomeToHomeSegue" id="Lvh-x1-NNz"/>
+                                    <segue destination="nAD-Hi-uxX" kind="show" identifier="WelcomeToHome" id="Lvh-x1-NNz"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -103,7 +103,7 @@
                                     <color key="titleShadowColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="KKc-zE-6ca" kind="show" id="hom-JJ-s6n"/>
+                                    <segue destination="KKc-zE-6ca" kind="show" identifier="HomeToRegister" id="hom-JJ-s6n"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L9O-oz-DdC">
@@ -118,6 +118,9 @@
                                     <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <color key="titleShadowColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="Nb6-Gi-YKi" kind="show" identifier="HomeToPerform" id="EoG-2Q-ehk"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NpM-Nf-whD">
                                 <rect key="frame" x="50" y="561" width="314" height="50"/>
@@ -197,13 +200,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="-50" translatesAutoresizingMaskIntoConstraints="NO" id="vY2-YQ-7g3">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="166.5"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="234.5"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PAT_Image" translatesAutoresizingMaskIntoConstraints="NO" id="VVf-r2-ogi">
-                                        <rect key="frame" x="0.0" y="0.0" width="232" height="166.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="232" height="234.5"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Register your study below" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Io1-xc-Exe">
-                                        <rect key="frame" x="182" y="0.0" width="232" height="166.5"/>
+                                        <rect key="frame" x="182" y="0.0" width="232" height="234.5"/>
                                         <fontDescription key="fontDescription" name="TrebuchetMS-Bold" family="Trebuchet MS" pointSize="30"/>
                                         <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -211,15 +214,15 @@
                                 </subviews>
                             </stackView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uVd-wA-Vjc" userLabel="NameView">
-                                <rect key="frame" x="54" y="166.5" width="306" height="191.5"/>
+                                <rect key="frame" x="54" y="234.5" width="306" height="123.5"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="textfield" translatesAutoresizingMaskIntoConstraints="NO" id="hmg-Z1-QWt">
-                                        <rect key="frame" x="-7" y="0.0" width="320" height="254"/>
+                                        <rect key="frame" x="-7" y="0.0" width="320" height="186"/>
                                     </imageView>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Study Name" textAlignment="center" minimumFontSize="25" translatesAutoresizingMaskIntoConstraints="NO" id="ddG-fV-Lwa" userLabel="Study Name TextField">
-                                        <rect key="frame" x="28" y="33" width="250" height="160"/>
-                                        <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="20"/>
-                                        <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no" spellCheckingType="no" returnKeyType="next" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="name"/>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="studyname@organisation.com" textAlignment="center" minimumFontSize="25" translatesAutoresizingMaskIntoConstraints="NO" id="ddG-fV-Lwa" userLabel="Study Name TextField">
+                                        <rect key="frame" x="28" y="33" width="250" height="92"/>
+                                        <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="15"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress" returnKeyType="next" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="name"/>
                                     </textField>
                                 </subviews>
                                 <constraints>
@@ -242,13 +245,13 @@
                                             <constraint firstAttribute="height" constant="128" id="FP4-wX-rId"/>
                                         </constraints>
                                     </imageView>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="center" minimumFontSize="25" translatesAutoresizingMaskIntoConstraints="NO" id="TCR-om-uPP" userLabel="Password TextField">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="password" textAlignment="center" minimumFontSize="25" translatesAutoresizingMaskIntoConstraints="NO" id="TCR-om-uPP" userLabel="Password TextField">
                                         <rect key="frame" x="15" y="23" width="250" height="38"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="38" id="GQx-iE-Yk3"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="20"/>
-                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="done" secureTextEntry="YES" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="done" secureTextEntry="YES" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="one-time-code"/>
                                     </textField>
                                 </subviews>
                                 <constraints>
@@ -271,66 +274,34 @@
                                     <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="j39-ML-zuw" kind="show" identifier="" id="sWd-QJ-Axa"/>
+                                    <action selector="registerButtonPressed:" destination="KKc-zE-6ca" eventType="touchUpInside" id="hch-t2-8Zo"/>
+                                    <segue destination="j39-ML-zuw" kind="show" identifier="RegisterToRegTab" id="hxt-DY-pBL"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aQ3-uW-bog" userLabel="ConfirmPasswordView">
-                                <rect key="frame" x="67" y="420" width="280" height="70"/>
-                                <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="textfield" translatesAutoresizingMaskIntoConstraints="NO" id="lT8-kx-ZVd">
-                                        <rect key="frame" x="-20" y="-29" width="320" height="128"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="128" id="Wwn-jG-66j"/>
-                                        </constraints>
-                                    </imageView>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Confirm Password" textAlignment="center" minimumFontSize="25" translatesAutoresizingMaskIntoConstraints="NO" id="neq-gA-EQM" userLabel="Confirm Password TextField">
-                                        <rect key="frame" x="41" y="0.0" width="198" height="38"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="38" id="xSV-PJ-05Q"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="20"/>
-                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="done" secureTextEntry="YES" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
-                                    </textField>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstItem="neq-gA-EQM" firstAttribute="leading" secondItem="aQ3-uW-bog" secondAttribute="leading" constant="41" id="2v3-nC-w7X"/>
-                                    <constraint firstItem="lT8-kx-ZVd" firstAttribute="centerX" secondItem="neq-gA-EQM" secondAttribute="centerX" id="Cgu-rm-7sY"/>
-                                    <constraint firstItem="neq-gA-EQM" firstAttribute="top" secondItem="aQ3-uW-bog" secondAttribute="top" id="HRq-2H-EPV"/>
-                                    <constraint firstItem="lT8-kx-ZVd" firstAttribute="leading" secondItem="aQ3-uW-bog" secondAttribute="leading" constant="-20" id="duE-aN-2R5"/>
-                                    <constraint firstItem="lT8-kx-ZVd" firstAttribute="centerX" secondItem="aQ3-uW-bog" secondAttribute="centerX" id="eFu-dE-ZhP"/>
-                                    <constraint firstItem="lT8-kx-ZVd" firstAttribute="centerY" secondItem="aQ3-uW-bog" secondAttribute="centerY" id="fO7-pD-aQ9"/>
-                                </constraints>
-                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.26882560300000002" green="0.47833834809999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="bff-tU-PpB" firstAttribute="bottom" secondItem="ptM-uV-cb6" secondAttribute="bottom" constant="152" id="3nq-dW-BOc"/>
                             <constraint firstItem="vY2-YQ-7g3" firstAttribute="top" secondItem="bff-tU-PpB" secondAttribute="top" id="4hU-Fz-WRb"/>
-                            <constraint firstItem="ptM-uV-cb6" firstAttribute="centerX" secondItem="aQ3-uW-bog" secondAttribute="centerX" id="79C-l1-wON"/>
                             <constraint firstItem="ptM-uV-cb6" firstAttribute="centerX" secondItem="6Cn-Oa-B2t" secondAttribute="centerX" id="9DY-Xo-FV2"/>
                             <constraint firstItem="uVd-wA-Vjc" firstAttribute="top" secondItem="vY2-YQ-7g3" secondAttribute="bottom" id="AVv-Vc-5Ju"/>
                             <constraint firstItem="6Cn-Oa-B2t" firstAttribute="top" secondItem="uVd-wA-Vjc" secondAttribute="bottom" constant="-40" id="F3u-w6-l5Y"/>
                             <constraint firstItem="6Cn-Oa-B2t" firstAttribute="leading" secondItem="bff-tU-PpB" secondAttribute="leading" constant="67" id="GZb-Zd-38V"/>
                             <constraint firstItem="ptM-uV-cb6" firstAttribute="leading" secondItem="bff-tU-PpB" secondAttribute="leading" constant="82" id="Qrq-iy-Hcw"/>
                             <constraint firstItem="vY2-YQ-7g3" firstAttribute="leading" secondItem="bff-tU-PpB" secondAttribute="leading" id="SFD-yz-hi2"/>
-                            <constraint firstItem="aQ3-uW-bog" firstAttribute="top" secondItem="6Cn-Oa-B2t" secondAttribute="bottom" constant="53" id="UD9-Fh-7dn"/>
                             <constraint firstAttribute="bottom" secondItem="uVd-wA-Vjc" secondAttribute="bottom" constant="450" id="Ucw-eQ-DrM"/>
-                            <constraint firstItem="6Cn-Oa-B2t" firstAttribute="leading" secondItem="aQ3-uW-bog" secondAttribute="leading" id="fjq-mq-nnd"/>
                             <constraint firstAttribute="bottom" secondItem="6Cn-Oa-B2t" secondAttribute="bottom" constant="441" id="gDg-MG-Nk5"/>
                             <constraint firstItem="uVd-wA-Vjc" firstAttribute="leading" secondItem="bff-tU-PpB" secondAttribute="leading" constant="54" id="i75-m1-FGe"/>
                             <constraint firstItem="bff-tU-PpB" firstAttribute="trailing" secondItem="vY2-YQ-7g3" secondAttribute="trailing" symbolic="YES" id="r8n-5s-TdK"/>
                             <constraint firstItem="uVd-wA-Vjc" firstAttribute="centerX" secondItem="6Cn-Oa-B2t" secondAttribute="centerX" id="tGM-Ww-QMb"/>
-                            <constraint firstItem="ptM-uV-cb6" firstAttribute="top" secondItem="aQ3-uW-bog" secondAttribute="bottom" constant="72" id="vVf-cK-W6z"/>
                             <constraint firstItem="uVd-wA-Vjc" firstAttribute="centerX" secondItem="vY2-YQ-7g3" secondAttribute="centerX" id="zgQ-Oh-lFp"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="bff-tU-PpB"/>
                     </view>
                     <navigationItem key="navigationItem" title="Register" id="Ypq-QO-sJf"/>
                     <connections>
-                        <outlet property="regStudyConfirmPasswordTF" destination="neq-gA-EQM" id="XfM-R0-Xh2"/>
-                        <outlet property="regStudyNameTF" destination="ddG-fV-Lwa" id="8Ab-51-eoN"/>
-                        <outlet property="regStudyPasswordTF" destination="TCR-om-uPP" id="oMC-hO-jfC"/>
-                        <outlet property="registerStudyButton" destination="ptM-uV-cb6" id="7RM-ce-lf3"/>
+                        <outlet property="emailTextField" destination="ddG-fV-Lwa" id="8Ab-51-eoN"/>
+                        <outlet property="passwordTextField" destination="TCR-om-uPP" id="oMC-hO-jfC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QDK-vG-fum" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -661,7 +632,11 @@
         <scene sceneID="inL-fX-DmI">
             <objects>
                 <tabBarController title="Register Tab" id="j39-ML-zuw" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" title="Study Design" id="kMp-Wm-9FY"/>
+                    <navigationItem key="navigationItem" title="Study Design" id="kMp-Wm-9FY">
+                        <barButtonItem key="rightBarButtonItem" title="Log Out" image="house.fill" catalog="system" id="77K-UI-PvY">
+                            <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </barButtonItem>
+                    </navigationItem>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="3S5-ww-Mmb">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -679,10 +654,153 @@
             </objects>
             <point key="canvasLocation" x="2841" y="-550"/>
         </scene>
+        <!--Perform Login-->
+        <scene sceneID="HBd-uB-AJH">
+            <objects>
+                <viewController title="Perform Login" id="Nb6-Gi-YKi" customClass="performStudyLoginViewController" customModule="Appceptability" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7j1-Yh-2kx">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PAT_Image" translatesAutoresizingMaskIntoConstraints="NO" id="fXf-zZ-wyD">
+                                <rect key="frame" x="0.0" y="0.0" width="232" height="167"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login into your study" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sod-fI-Ew8">
+                                <rect key="frame" x="214" y="-34" width="200" height="235"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="235" id="NPz-gS-M5Z"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="TrebuchetMS-Bold" family="Trebuchet MS" pointSize="30"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MwJ-sf-neY" userLabel="Study Name View">
+                                <rect key="frame" x="51" y="236" width="312" height="115"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="textfield" translatesAutoresizingMaskIntoConstraints="NO" id="nwU-rf-0qY">
+                                        <rect key="frame" x="7" y="-13" width="298" height="150"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="150" id="fdA-iG-CGr"/>
+                                        </constraints>
+                                    </imageView>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="studyname@organisation.com" textAlignment="center" minimumFontSize="25" translatesAutoresizingMaskIntoConstraints="NO" id="euj-dv-ahC" userLabel="Study Name TextField">
+                                        <rect key="frame" x="56" y="34" width="200" height="27"/>
+                                        <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="15"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress" returnKeyType="next" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="name"/>
+                                    </textField>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="nwU-rf-0qY" firstAttribute="top" secondItem="MwJ-sf-neY" secondAttribute="top" constant="-13" id="4Le-5k-ibH"/>
+                                    <constraint firstAttribute="bottom" secondItem="euj-dv-ahC" secondAttribute="bottom" constant="54" id="Agr-m5-9gE"/>
+                                    <constraint firstItem="euj-dv-ahC" firstAttribute="centerX" secondItem="MwJ-sf-neY" secondAttribute="centerX" id="Hcm-PN-SdF"/>
+                                    <constraint firstItem="euj-dv-ahC" firstAttribute="centerX" secondItem="nwU-rf-0qY" secondAttribute="centerX" id="SwX-R0-9cK"/>
+                                    <constraint firstItem="euj-dv-ahC" firstAttribute="top" secondItem="MwJ-sf-neY" secondAttribute="top" constant="34" id="gmC-1H-mn2"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fQh-mG-QL6">
+                                <rect key="frame" x="82" y="609" width="250" height="60"/>
+                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="CBd-wy-yEj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="TrebuchetMS-Bold" family="Trebuchet MS" pointSize="30"/>
+                                <state key="normal" title="Login">
+                                    <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="loginButtonPressed:" destination="Nb6-Gi-YKi" eventType="touchUpInside" id="8ki-cu-P93"/>
+                                    <action selector="registerButtonPressed:" destination="KKc-zE-6ca" eventType="touchUpInside" id="bCa-nm-w4G"/>
+                                    <segue destination="f5r-S7-fuF" kind="show" identifier="LoginToRandomTab" id="qIn-13-lXa"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zFM-5R-a1y" userLabel="Password View">
+                                <rect key="frame" x="68" y="340" width="278" height="49"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="textfield" translatesAutoresizingMaskIntoConstraints="NO" id="Ckz-o0-QUk">
+                                        <rect key="frame" x="-10" y="-10" width="298" height="150"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="150" id="BAN-ow-ReA"/>
+                                        </constraints>
+                                    </imageView>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="password" textAlignment="center" minimumFontSize="25" translatesAutoresizingMaskIntoConstraints="NO" id="VrY-pp-69i" userLabel="Password TextField">
+                                        <rect key="frame" x="99.5" y="0.0" width="82.5" height="95"/>
+                                        <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="20"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="done" secureTextEntry="YES" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="one-time-code"/>
+                                    </textField>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="VrY-pp-69i" secondAttribute="bottom" constant="-46" id="7Mi-2h-kev"/>
+                                    <constraint firstItem="Ckz-o0-QUk" firstAttribute="centerX" secondItem="zFM-5R-a1y" secondAttribute="centerX" id="VRg-Mw-qVj"/>
+                                    <constraint firstItem="VrY-pp-69i" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="zFM-5R-a1y" secondAttribute="leading" constant="20" symbolic="YES" id="cgk-RX-Liv"/>
+                                    <constraint firstAttribute="trailing" secondItem="VrY-pp-69i" secondAttribute="trailing" constant="96" id="fGv-lR-Oiv"/>
+                                    <constraint firstItem="Ckz-o0-QUk" firstAttribute="top" secondItem="zFM-5R-a1y" secondAttribute="top" constant="-10" id="hWO-sq-pf7"/>
+                                    <constraint firstItem="VrY-pp-69i" firstAttribute="top" secondItem="zFM-5R-a1y" secondAttribute="top" id="j3Z-Ug-tw5"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.26882560300000002" green="0.47833834809999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="MwJ-sf-neY" firstAttribute="leading" secondItem="9rl-gH-SV5" secondAttribute="leading" constant="51" id="2I8-1d-o7h"/>
+                            <constraint firstAttribute="bottom" secondItem="zFM-5R-a1y" secondAttribute="bottom" constant="419" id="3Un-mh-XbO"/>
+                            <constraint firstItem="zFM-5R-a1y" firstAttribute="centerX" secondItem="fQh-mG-QL6" secondAttribute="centerX" id="4Z7-wP-JpE"/>
+                            <constraint firstItem="sod-fI-Ew8" firstAttribute="leading" secondItem="9rl-gH-SV5" secondAttribute="leading" constant="214" id="5HQ-Uq-s51"/>
+                            <constraint firstAttribute="bottom" secondItem="MwJ-sf-neY" secondAttribute="bottom" constant="457" id="8EB-5v-Nms"/>
+                            <constraint firstItem="9rl-gH-SV5" firstAttribute="bottom" secondItem="fQh-mG-QL6" secondAttribute="bottom" constant="105" id="8QA-Q2-E68"/>
+                            <constraint firstAttribute="trailing" secondItem="sod-fI-Ew8" secondAttribute="trailing" id="9vj-qb-nfJ"/>
+                            <constraint firstItem="zFM-5R-a1y" firstAttribute="top" secondItem="7j1-Yh-2kx" secondAttribute="top" constant="340" id="D9W-a3-GHO"/>
+                            <constraint firstItem="fXf-zZ-wyD" firstAttribute="top" secondItem="9rl-gH-SV5" secondAttribute="top" id="DLM-ct-zK0"/>
+                            <constraint firstItem="9rl-gH-SV5" firstAttribute="trailing" secondItem="fXf-zZ-wyD" secondAttribute="trailing" constant="182" id="EjQ-EJ-TYR"/>
+                            <constraint firstItem="MwJ-sf-neY" firstAttribute="top" secondItem="7j1-Yh-2kx" secondAttribute="top" constant="236" id="TnA-NX-Jgd"/>
+                            <constraint firstItem="fQh-mG-QL6" firstAttribute="leading" secondItem="9rl-gH-SV5" secondAttribute="leading" constant="82" id="VXK-h0-1e1"/>
+                            <constraint firstItem="zFM-5R-a1y" firstAttribute="leading" secondItem="9rl-gH-SV5" secondAttribute="leading" constant="68" id="b6G-xZ-Zft"/>
+                            <constraint firstItem="fQh-mG-QL6" firstAttribute="centerX" secondItem="7j1-Yh-2kx" secondAttribute="centerX" id="dgz-uk-KB2"/>
+                            <constraint firstItem="fXf-zZ-wyD" firstAttribute="centerY" secondItem="sod-fI-Ew8" secondAttribute="centerY" id="lYT-2V-zbc"/>
+                            <constraint firstItem="MwJ-sf-neY" firstAttribute="top" secondItem="sod-fI-Ew8" secondAttribute="bottom" constant="35" id="mEW-UN-yU4"/>
+                            <constraint firstItem="zFM-5R-a1y" firstAttribute="centerX" secondItem="MwJ-sf-neY" secondAttribute="centerX" id="oYN-9l-3fz"/>
+                            <constraint firstItem="fXf-zZ-wyD" firstAttribute="leading" secondItem="7j1-Yh-2kx" secondAttribute="leading" id="wDy-Vr-LDc"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="9rl-gH-SV5"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="eBu-bi-G7t"/>
+                    <connections>
+                        <outlet property="emailTextField" destination="euj-dv-ahC" id="eXy-NQ-NOG"/>
+                        <outlet property="passwordTextField" destination="VrY-pp-69i" id="Cng-ZZ-ok7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XIh-kF-Opn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1963.7681159420292" y="138.61607142857142"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="E6e-cb-xLb">
+            <objects>
+                <viewController id="f5r-S7-fuF" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cBK-r8-uuw">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="SUCCESS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7eg-9E-LXc">
+                                <rect key="frame" x="20" y="152" width="374" height="217"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="gSf-Rq-5Xp"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="myy-Uz-bXM"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fNO-SD-KYd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2840.579710144928" y="138.61607142857142"/>
+        </scene>
     </scenes>
     <resources>
         <image name="PAT_Image" width="166.5" height="166.5"/>
         <image name="barcode" catalog="system" width="64" height="46"/>
+        <image name="house.fill" catalog="system" width="64" height="52"/>
         <image name="questionmark.circle.fill" catalog="system" width="64" height="60"/>
         <image name="smiley.fill" catalog="system" width="64" height="60"/>
         <image name="textfield" width="298" height="93"/>

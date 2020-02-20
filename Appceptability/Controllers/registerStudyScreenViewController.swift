@@ -7,29 +7,40 @@
 //
 
 import UIKit
+import Firebase
 
 class registerStudyScreenViewController: UIViewController {
-
-    @IBOutlet weak var regStudyNameTF: UITextField!
-    @IBOutlet weak var regStudyPasswordTF: UITextField!
-    @IBOutlet weak var regStudyConfirmPasswordTF: UITextField!
-    @IBOutlet weak var registerStudyButton: UIButton!
+    
+    @IBOutlet weak var emailTextField: UITextField!
+    @IBOutlet weak var passwordTextField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // let client = MSClient(applicationURLString: "https://acceptabilityappios.azurewebsites.net")
+        
     }
-
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func registerButtonPressed(_ sender: UIButton) {
+        
+        if let email = emailTextField.text, let password = passwordTextField.text {
+            Auth.auth().createUser(withEmail: email, password: password) { authResult, error in
+                if let e = error {
+                    print(e)
+                } else {
+                    
+                    //Create alert
+                    let alert = UIAlertController(title: "Registration Success", message: "Your study has been successfully registered", preferredStyle: UIAlertController.Style.alert)
+                    
+                    //Add action
+                    alert.addAction(UIAlertAction(title: "Continue", style: UIAlertAction.Style.default, handler: nil))
+                    
+                    //Show alert
+                    self.present(alert, animated: true, completion: nil)
+                    
+                    //Navigate to the RegisterTabVC
+                    self.performSegue(withIdentifier: K.registerSegue, sender: self)
+                }
+                
+            }
+        }
     }
-    */
-
 }
