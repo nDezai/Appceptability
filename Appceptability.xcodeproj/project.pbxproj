@@ -21,6 +21,7 @@
 		AC9794C523F2F97400A0E74F /* registerStudyScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9794C423F2F97400A0E74F /* registerStudyScreenViewController.swift */; };
 		ACAD8B3823FE8AD000540CA9 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACAD8B3723FE8AD000540CA9 /* Constants.swift */; };
 		ACAD8B3A23FE90B500540CA9 /* performStudyLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACAD8B3923FE90B500540CA9 /* performStudyLoginViewController.swift */; };
+		ACAD8B3C23FEAC1100540CA9 /* registerTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACAD8B3B23FEAC1100540CA9 /* registerTabViewController.swift */; };
 		ACF2747D23FD4B530096844A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = ACF2747C23FD4B530096844A /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
@@ -43,6 +44,7 @@
 		AC9794C423F2F97400A0E74F /* registerStudyScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = registerStudyScreenViewController.swift; sourceTree = "<group>"; };
 		ACAD8B3723FE8AD000540CA9 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		ACAD8B3923FE90B500540CA9 /* performStudyLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = performStudyLoginViewController.swift; sourceTree = "<group>"; };
+		ACAD8B3B23FEAC1100540CA9 /* registerTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = registerTabViewController.swift; sourceTree = "<group>"; };
 		ACF2747C23FD4B530096844A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -106,6 +108,7 @@
 				AC68531623F2AB07005E4755 /* mainScreenViewController.swift */,
 				AC9399A123F2E330002B3E07 /* homeScreenViewController.swift */,
 				AC9794C423F2F97400A0E74F /* registerStudyScreenViewController.swift */,
+				ACAD8B3B23FEAC1100540CA9 /* registerTabViewController.swift */,
 				AC72218723F413AB00CA2355 /* participantsAndSampleSizeViewController.swift */,
 				AC72218923F4141500CA2355 /* demographicsViewController.swift */,
 				AC72218B23F4148F00CA2355 /* questionsViewController.swift */,
@@ -252,6 +255,7 @@
 				AC9399A223F2E330002B3E07 /* homeScreenViewController.swift in Sources */,
 				AC68531323F2AB07005E4755 /* AppDelegate.swift in Sources */,
 				AC68531523F2AB07005E4755 /* SceneDelegate.swift in Sources */,
+				ACAD8B3C23FEAC1100540CA9 /* registerTabViewController.swift in Sources */,
 				ACAD8B3823FE8AD000540CA9 /* Constants.swift in Sources */,
 				AC9794C523F2F97400A0E74F /* registerStudyScreenViewController.swift in Sources */,
 				ACAD8B3A23FE90B500540CA9 /* performStudyLoginViewController.swift in Sources */,

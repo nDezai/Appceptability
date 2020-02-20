@@ -631,11 +631,17 @@
         <!--Register Tab-->
         <scene sceneID="inL-fX-DmI">
             <objects>
-                <tabBarController title="Register Tab" id="j39-ML-zuw" sceneMemberID="viewController">
+                <tabBarController title="Register Tab" id="j39-ML-zuw" customClass="registerTabViewController" customModule="Appceptability" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" title="Study Design" id="kMp-Wm-9FY">
-                        <barButtonItem key="rightBarButtonItem" title="Log Out" image="house.fill" catalog="system" id="77K-UI-PvY">
+                        <barButtonItem key="rightBarButtonItem" title="Log Out" id="77K-UI-PvY">
                             <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="logOutPressed:" destination="j39-ML-zuw" id="Cre-eR-c21"/>
+                            </connections>
                         </barButtonItem>
+                        <connections>
+                            <outlet property="rightBarButtonItem" destination="77K-UI-PvY" id="ryv-N5-I8X"/>
+                        </connections>
                     </navigationItem>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="3S5-ww-Mmb">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
@@ -800,7 +806,6 @@
     <resources>
         <image name="PAT_Image" width="166.5" height="166.5"/>
         <image name="barcode" catalog="system" width="64" height="46"/>
-        <image name="house.fill" catalog="system" width="64" height="52"/>
         <image name="questionmark.circle.fill" catalog="system" width="64" height="60"/>
         <image name="smiley.fill" catalog="system" width="64" height="60"/>
         <image name="textfield" width="298" height="93"/>
