@@ -200,13 +200,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="-50" translatesAutoresizingMaskIntoConstraints="NO" id="vY2-YQ-7g3">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="234.5"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="166.5"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PAT_Image" translatesAutoresizingMaskIntoConstraints="NO" id="VVf-r2-ogi">
-                                        <rect key="frame" x="0.0" y="0.0" width="232" height="234.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="232" height="166.5"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Register your study below" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Io1-xc-Exe">
-                                        <rect key="frame" x="182" y="0.0" width="232" height="234.5"/>
+                                        <rect key="frame" x="182" y="0.0" width="232" height="166.5"/>
                                         <fontDescription key="fontDescription" name="TrebuchetMS-Bold" family="Trebuchet MS" pointSize="30"/>
                                         <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -214,13 +214,13 @@
                                 </subviews>
                             </stackView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uVd-wA-Vjc" userLabel="NameView">
-                                <rect key="frame" x="54" y="234.5" width="306" height="123.5"/>
+                                <rect key="frame" x="54" y="166.5" width="306" height="191.5"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="textfield" translatesAutoresizingMaskIntoConstraints="NO" id="hmg-Z1-QWt">
-                                        <rect key="frame" x="-7" y="0.0" width="320" height="186"/>
+                                        <rect key="frame" x="-7" y="0.0" width="320" height="254"/>
                                     </imageView>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="studyname@organisation.com" textAlignment="center" minimumFontSize="25" translatesAutoresizingMaskIntoConstraints="NO" id="ddG-fV-Lwa" userLabel="Study Name TextField">
-                                        <rect key="frame" x="28" y="33" width="250" height="92"/>
+                                        <rect key="frame" x="28" y="33" width="250" height="160"/>
                                         <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="15"/>
                                         <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress" returnKeyType="next" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="name"/>
                                     </textField>
@@ -723,18 +723,18 @@
                                         </constraints>
                                     </imageView>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="password" textAlignment="center" minimumFontSize="25" translatesAutoresizingMaskIntoConstraints="NO" id="VrY-pp-69i" userLabel="Password TextField">
-                                        <rect key="frame" x="99.5" y="0.0" width="82.5" height="95"/>
+                                        <rect key="frame" x="24" y="5" width="230" height="95"/>
                                         <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="20"/>
                                         <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="done" secureTextEntry="YES" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="one-time-code"/>
                                     </textField>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="VrY-pp-69i" secondAttribute="bottom" constant="-46" id="7Mi-2h-kev"/>
+                                    <constraint firstItem="VrY-pp-69i" firstAttribute="centerX" secondItem="Ckz-o0-QUk" secondAttribute="centerX" id="Fil-CZ-PpH"/>
+                                    <constraint firstItem="VrY-pp-69i" firstAttribute="leading" secondItem="zFM-5R-a1y" secondAttribute="leading" constant="24" id="KDp-el-XOl"/>
+                                    <constraint firstAttribute="bottom" secondItem="VrY-pp-69i" secondAttribute="bottom" constant="-51" id="PcG-XU-zoH"/>
                                     <constraint firstItem="Ckz-o0-QUk" firstAttribute="centerX" secondItem="zFM-5R-a1y" secondAttribute="centerX" id="VRg-Mw-qVj"/>
-                                    <constraint firstItem="VrY-pp-69i" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="zFM-5R-a1y" secondAttribute="leading" constant="20" symbolic="YES" id="cgk-RX-Liv"/>
-                                    <constraint firstAttribute="trailing" secondItem="VrY-pp-69i" secondAttribute="trailing" constant="96" id="fGv-lR-Oiv"/>
                                     <constraint firstItem="Ckz-o0-QUk" firstAttribute="top" secondItem="zFM-5R-a1y" secondAttribute="top" constant="-10" id="hWO-sq-pf7"/>
-                                    <constraint firstItem="VrY-pp-69i" firstAttribute="top" secondItem="zFM-5R-a1y" secondAttribute="top" id="j3Z-Ug-tw5"/>
+                                    <constraint firstItem="VrY-pp-69i" firstAttribute="top" secondItem="zFM-5R-a1y" secondAttribute="top" constant="5" id="zU2-Ax-qNI"/>
                                 </constraints>
                             </view>
                         </subviews>
