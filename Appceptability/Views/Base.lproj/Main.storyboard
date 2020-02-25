@@ -200,13 +200,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="-50" translatesAutoresizingMaskIntoConstraints="NO" id="vY2-YQ-7g3">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="166.5"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="234.5"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PAT_Image" translatesAutoresizingMaskIntoConstraints="NO" id="VVf-r2-ogi">
-                                        <rect key="frame" x="0.0" y="0.0" width="232" height="166.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="232" height="234.5"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Register your study below" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Io1-xc-Exe">
-                                        <rect key="frame" x="182" y="0.0" width="232" height="166.5"/>
+                                        <rect key="frame" x="182" y="0.0" width="232" height="234.5"/>
                                         <fontDescription key="fontDescription" name="TrebuchetMS-Bold" family="Trebuchet MS" pointSize="30"/>
                                         <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -214,13 +214,13 @@
                                 </subviews>
                             </stackView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uVd-wA-Vjc" userLabel="NameView">
-                                <rect key="frame" x="54" y="166.5" width="306" height="191.5"/>
+                                <rect key="frame" x="54" y="234.5" width="306" height="123.5"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="textfield" translatesAutoresizingMaskIntoConstraints="NO" id="hmg-Z1-QWt">
-                                        <rect key="frame" x="-7" y="0.0" width="320" height="254"/>
+                                        <rect key="frame" x="-7" y="0.0" width="320" height="186"/>
                                     </imageView>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="studyname@organisation.com" textAlignment="center" minimumFontSize="25" translatesAutoresizingMaskIntoConstraints="NO" id="ddG-fV-Lwa" userLabel="Study Name TextField">
-                                        <rect key="frame" x="28" y="33" width="250" height="160"/>
+                                        <rect key="frame" x="28" y="33" width="250" height="92"/>
                                         <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="15"/>
                                         <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress" returnKeyType="next" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="name"/>
                                     </textField>
@@ -328,6 +328,9 @@
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Vst-uL-HWI">
                                 <rect key="frame" x="20" y="200" width="51" height="30"/>
                                 <color key="onTintColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="switchOnePressed:" destination="9b2-dN-C0r" eventType="valueChanged" id="zpu-mw-abF"/>
+                                </connections>
                             </switch>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Participant ID" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SAS-Qt-oEh">
                                 <rect key="frame" x="108" y="200" width="286" height="30"/>
@@ -341,6 +344,9 @@
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="O9e-di-5hA">
                                 <rect key="frame" x="20" y="269" width="51" height="30.5"/>
                                 <color key="onTintColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="switchTwoPressed:" destination="9b2-dN-C0r" eventType="valueChanged" id="zcb-h7-poD"/>
+                                </connections>
                             </switch>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sample ID" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d3m-pm-8Un">
                                 <rect key="frame" x="108" y="269" width="286" height="30.5"/>
@@ -351,6 +357,9 @@
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="PbE-zF-IPC">
                                 <rect key="frame" x="20" y="340" width="51" height="31"/>
                                 <color key="onTintColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="switchThreePressed:" destination="9b2-dN-C0r" eventType="valueChanged" id="na5-ky-hhM"/>
+                                </connections>
                             </switch>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Participant Age" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="efA-YC-eZ9">
                                 <rect key="frame" x="108" y="340.5" width="286" height="30"/>
@@ -364,6 +373,9 @@
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="i27-Yo-b8J">
                                 <rect key="frame" x="20" y="410" width="51" height="31"/>
                                 <color key="onTintColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="switchFourPressed:" destination="9b2-dN-C0r" eventType="valueChanged" id="lAn-Oz-1kh"/>
+                                </connections>
                             </switch>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Participant Location" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zDY-bT-dkb">
                                 <rect key="frame" x="108" y="410.5" width="286" height="30"/>
@@ -377,6 +389,9 @@
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="3F7-FL-KS0">
                                 <rect key="frame" x="20" y="480" width="51" height="26"/>
                                 <color key="onTintColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="allSwitchPressed:" destination="9b2-dN-C0r" eventType="valueChanged" id="dJx-Jg-Bx8"/>
+                                </connections>
                             </switch>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="All of the Above" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rMj-oW-gc5">
                                 <rect key="frame" x="108" y="478" width="286" height="30"/>
@@ -690,7 +705,7 @@
                                 <rect key="frame" x="51" y="236" width="312" height="115"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="textfield" translatesAutoresizingMaskIntoConstraints="NO" id="nwU-rf-0qY">
-                                        <rect key="frame" x="7" y="-13" width="298" height="150"/>
+                                        <rect key="frame" x="-142" y="-13" width="596" height="150"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="150" id="fdA-iG-CGr"/>
                                         </constraints>
@@ -729,7 +744,7 @@
                                 <rect key="frame" x="68" y="340" width="278" height="49"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="textfield" translatesAutoresizingMaskIntoConstraints="NO" id="Ckz-o0-QUk">
-                                        <rect key="frame" x="-10" y="-10" width="298" height="150"/>
+                                        <rect key="frame" x="-159" y="-10" width="596" height="150"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="150" id="BAN-ow-ReA"/>
                                         </constraints>
