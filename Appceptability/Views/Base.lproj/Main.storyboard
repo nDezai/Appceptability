@@ -275,7 +275,7 @@
                                 </state>
                                 <connections>
                                     <action selector="registerButtonPressed:" destination="KKc-zE-6ca" eventType="touchUpInside" id="hch-t2-8Zo"/>
-                                    <segue destination="j39-ML-zuw" kind="show" identifier="RegisterToRegTab" id="hxt-DY-pBL"/>
+                                    <segue destination="f5r-S7-fuF" kind="show" identifier="RegisterToRegTab" id="xNP-0M-kad"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -528,9 +528,15 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="29" id="TOC-uJ-BEb"/>
                                 </constraints>
+                                <connections>
+                                    <action selector="participantSliderValueChanged:" destination="IJd-x1-V7G" eventType="valueChanged" id="ste-tR-UWa"/>
+                                </connections>
                             </slider>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="3" minValue="1" maxValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="Qyx-Ty-0Ds" userLabel="Sample Slider">
                                 <rect key="frame" x="53" y="470" width="308" height="30"/>
+                                <connections>
+                                    <action selector="sampleSliderValueChanged:" destination="IJd-x1-V7G" eventType="valueChanged" id="Mzu-6m-vBw"/>
+                                </connections>
                             </slider>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" placeholder="#" textAlignment="center" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="sHB-tA-v9t">
                                 <rect key="frame" x="158" y="330" width="98" height="34"/>
@@ -689,7 +695,7 @@
                                             <constraint firstAttribute="height" constant="150" id="fdA-iG-CGr"/>
                                         </constraints>
                                     </imageView>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="studyname@organisation.com" textAlignment="center" minimumFontSize="25" translatesAutoresizingMaskIntoConstraints="NO" id="euj-dv-ahC" userLabel="Study Name TextField">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="test@test.com" placeholder="studyname@organisation.com" textAlignment="center" minimumFontSize="25" translatesAutoresizingMaskIntoConstraints="NO" id="euj-dv-ahC" userLabel="Study Name TextField">
                                         <rect key="frame" x="56" y="34" width="200" height="27"/>
                                         <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="15"/>
                                         <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress" returnKeyType="next" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="name"/>
@@ -716,7 +722,7 @@
                                 <connections>
                                     <action selector="loginButtonPressed:" destination="Nb6-Gi-YKi" eventType="touchUpInside" id="8ki-cu-P93"/>
                                     <action selector="registerButtonPressed:" destination="KKc-zE-6ca" eventType="touchUpInside" id="bCa-nm-w4G"/>
-                                    <segue destination="f5r-S7-fuF" kind="show" identifier="LoginToRandomTab" id="qIn-13-lXa"/>
+                                    <segue destination="j39-ML-zuw" kind="show" identifier="LoginToRandomTab" id="SwA-Y0-4cQ"/>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zFM-5R-a1y" userLabel="Password View">
@@ -728,7 +734,7 @@
                                             <constraint firstAttribute="height" constant="150" id="BAN-ow-ReA"/>
                                         </constraints>
                                     </imageView>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="password" textAlignment="center" minimumFontSize="25" translatesAutoresizingMaskIntoConstraints="NO" id="VrY-pp-69i" userLabel="Password TextField">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="helloworld" placeholder="password" textAlignment="center" minimumFontSize="25" translatesAutoresizingMaskIntoConstraints="NO" id="VrY-pp-69i" userLabel="Password TextField">
                                         <rect key="frame" x="24" y="5" width="230" height="95"/>
                                         <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="20"/>
                                         <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="done" secureTextEntry="YES" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="one-time-code"/>
@@ -785,15 +791,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="SUCCESS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7eg-9E-LXc">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SUCCESS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7eg-9E-LXc">
                                 <rect key="frame" x="20" y="152" width="374" height="217"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="60"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="7eg-9E-LXc" firstAttribute="leading" secondItem="cBK-r8-uuw" secondAttribute="leadingMargin" id="3Ub-93-Gly"/>
+                            <constraint firstItem="7eg-9E-LXc" firstAttribute="top" secondItem="gSf-Rq-5Xp" secondAttribute="top" constant="152" id="83o-f7-6LA"/>
+                            <constraint firstItem="7eg-9E-LXc" firstAttribute="trailing" secondItem="cBK-r8-uuw" secondAttribute="trailingMargin" id="Awb-C5-VJH"/>
+                            <constraint firstItem="gSf-Rq-5Xp" firstAttribute="bottom" secondItem="7eg-9E-LXc" secondAttribute="bottom" constant="405" id="jcX-Jq-0O6"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="gSf-Rq-5Xp"/>
                     </view>
                     <navigationItem key="navigationItem" id="myy-Uz-bXM"/>

@@ -29,10 +29,10 @@ class registerStudyScreenViewController: UIViewController {
                     
                     //Create alert
                     let alert = UIAlertController(title: "Registration Success", message: "Your study has been successfully registered", preferredStyle: UIAlertController.Style.alert)
-                    
+
                     //Add action
                     alert.addAction(UIAlertAction(title: "Continue", style: UIAlertAction.Style.default, handler: nil))
-                    
+
                     //Show alert
                     self.present(alert, animated: true, completion: nil)
                     
