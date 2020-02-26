@@ -10,15 +10,18 @@ import UIKit
 import Firebase
 
 class registerTabViewController: UITabBarController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         navigationItem.hidesBackButton = true
     }
     
     @IBAction func logOutPressed(_ sender: UIBarButtonItem) {
-        
+        logOut()
+    }
+    
+    func logOut() {
         do {
             try Auth.auth().signOut()
             self.navigationController?.popToRootViewController(animated: true)
@@ -26,5 +29,4 @@ class registerTabViewController: UITabBarController {
             print("Error signing out: @%", signOutError)
         }
     }
-
 }

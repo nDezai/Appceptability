@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class demographicsViewController: UIViewController {
     
@@ -18,6 +19,10 @@ class demographicsViewController: UIViewController {
     @IBOutlet weak var saveAndContinueButton: UIButton!
     
     override func viewWillAppear(_ animated: Bool) {
+        participantIDSwitch.isOn = false
+        sampleIDSwitch.isOn = false
+        ageSwitch.isOn = false
+        locationSwitch.isOn = false
         allAboveSwitch.isOn = true
     }
     
@@ -25,7 +30,9 @@ class demographicsViewController: UIViewController {
         super.viewDidLoad()
         
     }
-
+    
+// MARK: - Slider Functions
+    
     @IBAction func switchOnePressed(_ sender: UISwitch) {
         allAboveSwitch.setOn(!sender.isOn, animated: true)
     }
@@ -47,6 +54,11 @@ class demographicsViewController: UIViewController {
         sampleIDSwitch.setOn(!sender.isOn, animated: true)
         ageSwitch.setOn(!sender.isOn, animated: true)
         locationSwitch.setOn(!sender.isOn, animated: true)
+    }
+
+    // MARK: - Save & Continue Function
+    
+    @IBAction func savePressed(_ sender: UIButton) {
     }
     
 }

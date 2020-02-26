@@ -200,13 +200,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="-50" translatesAutoresizingMaskIntoConstraints="NO" id="vY2-YQ-7g3">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="234.5"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="166.5"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PAT_Image" translatesAutoresizingMaskIntoConstraints="NO" id="VVf-r2-ogi">
-                                        <rect key="frame" x="0.0" y="0.0" width="232" height="234.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="232" height="166.5"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Register your study below" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Io1-xc-Exe">
-                                        <rect key="frame" x="182" y="0.0" width="232" height="234.5"/>
+                                        <rect key="frame" x="182" y="0.0" width="232" height="166.5"/>
                                         <fontDescription key="fontDescription" name="TrebuchetMS-Bold" family="Trebuchet MS" pointSize="30"/>
                                         <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -214,13 +214,13 @@
                                 </subviews>
                             </stackView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uVd-wA-Vjc" userLabel="NameView">
-                                <rect key="frame" x="54" y="234.5" width="306" height="123.5"/>
+                                <rect key="frame" x="54" y="166.5" width="306" height="191.5"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="textfield" translatesAutoresizingMaskIntoConstraints="NO" id="hmg-Z1-QWt">
-                                        <rect key="frame" x="-7" y="0.0" width="320" height="186"/>
+                                        <rect key="frame" x="-7" y="0.0" width="320" height="254"/>
                                     </imageView>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="studyname@organisation.com" textAlignment="center" minimumFontSize="25" translatesAutoresizingMaskIntoConstraints="NO" id="ddG-fV-Lwa" userLabel="Study Name TextField">
-                                        <rect key="frame" x="28" y="33" width="250" height="92"/>
+                                        <rect key="frame" x="28" y="33" width="250" height="160"/>
                                         <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="15"/>
                                         <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress" returnKeyType="next" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="name"/>
                                     </textField>
@@ -413,6 +413,9 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
                                 </state>
+                                <connections>
+                                    <action selector="savePressed:" destination="9b2-dN-C0r" eventType="touchUpInside" id="i4z-zm-rVb"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.26882560300000002" green="0.47833834809999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -489,9 +492,12 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
                                 </state>
+                                <connections>
+                                    <action selector="savePressed:" destination="fMP-Na-5SV" eventType="touchUpInside" id="5xZ-cA-quH"/>
+                                </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Je1-7v-4CO">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="650"/>
+                                <rect key="frame" x="0.0" y="135" width="414" height="515"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <color key="separatorColor" red="0.26882560300000002" green="0.47833834809999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="sectionIndexBackgroundColor" red="0.26882560300000002" green="0.47833834809999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -508,15 +514,27 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select the questions to be asked in this study" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ww5-CL-OVr">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="147"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="147" id="3WS-tV-JTW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.26882560300000002" green="0.47833834809999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="0Xt-R3-VWb" firstAttribute="top" secondItem="Je1-7v-4CO" secondAttribute="bottom" constant="15" id="3lN-ZC-RkO"/>
-                            <constraint firstItem="0Xt-R3-VWb" firstAttribute="centerX" secondItem="Je1-7v-4CO" secondAttribute="centerX" id="Dby-T8-viw"/>
-                            <constraint firstItem="Je1-7v-4CO" firstAttribute="leading" secondItem="8f1-FQ-7pD" secondAttribute="leading" id="YsZ-ov-3C9"/>
+                            <constraint firstItem="Je1-7v-4CO" firstAttribute="leading" secondItem="ww5-CL-OVr" secondAttribute="leading" id="JHR-Kb-75x"/>
+                            <constraint firstItem="Je1-7v-4CO" firstAttribute="leading" secondItem="8f1-FQ-7pD" secondAttribute="leading" id="JKq-p9-Nt7"/>
+                            <constraint firstItem="Je1-7v-4CO" firstAttribute="centerX" secondItem="0Xt-R3-VWb" secondAttribute="centerX" id="Mbx-85-27J"/>
+                            <constraint firstItem="Je1-7v-4CO" firstAttribute="trailing" secondItem="ww5-CL-OVr" secondAttribute="trailing" id="RID-WI-x4A"/>
+                            <constraint firstItem="0Xt-R3-VWb" firstAttribute="top" secondItem="Je1-7v-4CO" secondAttribute="bottom" constant="15" id="bbs-ez-YTH"/>
                             <constraint firstItem="0Xt-R3-VWb" firstAttribute="centerX" secondItem="8f1-FQ-7pD" secondAttribute="centerX" id="btL-d4-Gkm"/>
+                            <constraint firstItem="Je1-7v-4CO" firstAttribute="top" secondItem="AP6-s2-stD" secondAttribute="top" constant="135" id="nRc-6z-oDn"/>
                             <constraint firstAttribute="bottom" secondItem="0Xt-R3-VWb" secondAttribute="bottom" constant="20" symbolic="YES" id="s8H-m3-CLm"/>
-                            <constraint firstItem="Je1-7v-4CO" firstAttribute="top" secondItem="AP6-s2-stD" secondAttribute="top" id="viu-US-JPa"/>
+                            <constraint firstItem="ww5-CL-OVr" firstAttribute="top" secondItem="AP6-s2-stD" secondAttribute="top" id="waV-do-YGF"/>
                             <constraint firstItem="0Xt-R3-VWb" firstAttribute="leading" secondItem="AP6-s2-stD" secondAttribute="leading" constant="95" id="xin-Oh-BLu"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="AP6-s2-stD"/>
@@ -600,6 +618,9 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
                                 </state>
+                                <connections>
+                                    <action selector="savePressed:" destination="IJd-x1-V7G" eventType="touchUpInside" id="kJ4-yi-ORh"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.26882560300000002" green="0.47833834809999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -705,7 +726,7 @@
                                 <rect key="frame" x="51" y="236" width="312" height="115"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="textfield" translatesAutoresizingMaskIntoConstraints="NO" id="nwU-rf-0qY">
-                                        <rect key="frame" x="-142" y="-13" width="596" height="150"/>
+                                        <rect key="frame" x="7" y="-13" width="298" height="150"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="150" id="fdA-iG-CGr"/>
                                         </constraints>
@@ -744,7 +765,7 @@
                                 <rect key="frame" x="68" y="340" width="278" height="49"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="textfield" translatesAutoresizingMaskIntoConstraints="NO" id="Ckz-o0-QUk">
-                                        <rect key="frame" x="-159" y="-10" width="596" height="150"/>
+                                        <rect key="frame" x="-10" y="-10" width="298" height="150"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="150" id="BAN-ow-ReA"/>
                                         </constraints>

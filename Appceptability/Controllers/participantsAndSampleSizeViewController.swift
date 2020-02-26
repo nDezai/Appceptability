@@ -7,9 +7,10 @@
 //
 
 import UIKit
+import Firebase
 
 class participantsAndSampleSizeViewController: UIViewController {
-
+    
     @IBOutlet weak var participantSlider: UISlider!
     @IBOutlet weak var participantNumberTF: UITextField!
     
@@ -17,6 +18,9 @@ class participantsAndSampleSizeViewController: UIViewController {
     @IBOutlet weak var sampleNumberTF: UITextField!
     
     @IBOutlet weak var saveAndContinueButton: UIButton!
+    
+    var docRef: DocumentReference? = nil
+    let newDocumentID = Auth.auth().currentUser?.uid // provides UID based on currently logged in user.
     
     override func viewWillAppear(_ animated: Bool) {
         participantSlider.value = 10
@@ -32,6 +36,10 @@ class participantsAndSampleSizeViewController: UIViewController {
         
         participantSlider.addTarget(self, action: #selector(participantSliderValueChanged), for: UIControl.Event.valueChanged)
         sampleSlider.addTarget(self, action: #selector(sampleSliderValueChanged), for: UIControl.Event.valueChanged)
+        
+        docRef = Firestore.firestore().document("users/\(String(describing: newDocumentID))/registration/participantsAndSample")
+        // describing leads to 'Optional [UID]' formed in Firestore Database. Need to examine further.
+        
     }
     
     // MARK: - Sliders
@@ -47,17 +55,30 @@ class participantsAndSampleSizeViewController: UIViewController {
         sampleNumberTF.text = "\(sampleValue)"
     }
     
-   // MARK: - Save & Continue Function
+    // MARK: - Save & Continue Function
     
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func savePressed(_ sender: UIButton) {
+        
+        guard let participantText = participantNumberTF.text, !participantText.isEmpty else {return}
+        guard let sampleText = sampleNumberTF.text, !sampleText.isEmpty else {return}
+        let dataToSave: [String: Any] = ["participants": participantText, "samples": sampleText]
+        
+        docRef!.setData(dataToSave, merge: true) { (error) in
+            if let e = error {
+                print("Error saving data: \(e.localizedDescription)")
+            } else {
+                //Create alert
+                let alert = UIAlertController(title: "Save Successful", message: "Your information has been successfully saved", preferredStyle: UIAlertController.Style.alert)
+                
+                //Add action
+                alert.addAction(UIAlertAction(title: "Continue", style: UIAlertAction.Style.default, handler: nil))
+                
+                //Show alert
+                self.present(alert, animated: true, completion: nil)
+                
+                self.tabBarController?.selectedIndex = 1
+            }
+        }
     }
-    */
-
+    
 }

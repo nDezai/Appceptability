@@ -27,14 +27,17 @@ class registerStudyScreenViewController: UIViewController {
                     print(e)
                 } else {
                     
-                    //Create alert
-                    let alert = UIAlertController(title: "Registration Success", message: "Your study has been successfully registered", preferredStyle: UIAlertController.Style.alert)
-
-                    //Add action
-                    alert.addAction(UIAlertAction(title: "Continue", style: UIAlertAction.Style.default, handler: nil))
-
-                    //Show alert
-                    self.present(alert, animated: true, completion: nil)
+                    let db = Firestore.firestore()
+                    let newDocumentID = Auth.auth().currentUser?.uid
+                    let newUserRef = db.collection("users").document(newDocumentID!)
+                    
+                    newUserRef.setData(["Study Email": email, "uid": authResult!.user.uid]) { (error) in
+                        if error != nil {
+                            print("Couldn't add UID data")
+                        }
+                    }
+                    
+                    self.alertAppear()
                     
                     //Navigate to the RegisterTabVC
                     self.performSegue(withIdentifier: K.registerSegue, sender: self)
@@ -42,5 +45,17 @@ class registerStudyScreenViewController: UIViewController {
                 
             }
         }
+    }
+    
+    func alertAppear() {
+        
+        //Create alert
+        let alert = UIAlertController(title: "Registration Success", message: "Your study has been successfully registered", preferredStyle: UIAlertController.Style.alert)
+
+        //Add action
+        alert.addAction(UIAlertAction(title: "Continue", style: UIAlertAction.Style.default, handler: nil))
+
+        //Show alert
+        self.present(alert, animated: true, completion: nil)
     }
 }
