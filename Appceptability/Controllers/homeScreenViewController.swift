@@ -18,6 +18,16 @@ class homeScreenViewController: UIViewController {
         super.viewDidLoad()
 
         navigationItem.hidesBackButton = true
+        setUpElement()
     }
-
+    
+    // MARK: - Other Functions
+    
+    func setUpElement() {
+        
+        // Style the elements
+        Utilities.styleFilledButton(createButton)
+        Utilities.styleFilledButton(performButton)
+        Utilities.styleFilledButton(viewButton)
+    }
 }

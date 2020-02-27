@@ -14,4 +14,9 @@ struct K {
     static let registerSegue = "RegisterToRegTab"
     static let loginSegue = "LoginToRandomTab"
     
+    struct Storyboard {
+        
+        static let registerVC = "registerTabViewController"
+        static let performVC = "randomViewController"
+    }
 }

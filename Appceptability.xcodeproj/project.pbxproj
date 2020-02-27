@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		195F03A8232BE64ABD19B180 /* Pods_Appceptability.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DBD48FB9EC99A4C718C2416 /* Pods_Appceptability.framework */; };
+		AC052D0D2407D0A30042189E /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC052D0C2407D0A30042189E /* Utilities.swift */; };
+		AC052D0F2407DFE20042189E /* randomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC052D0E2407DFE20042189E /* randomViewController.swift */; };
 		AC68531323F2AB07005E4755 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC68531223F2AB07005E4755 /* AppDelegate.swift */; };
 		AC68531523F2AB07005E4755 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC68531423F2AB07005E4755 /* SceneDelegate.swift */; };
 		AC68531723F2AB07005E4755 /* mainScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC68531623F2AB07005E4755 /* mainScreenViewController.swift */; };
@@ -29,6 +31,8 @@
 		0DBD48FB9EC99A4C718C2416 /* Pods_Appceptability.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Appceptability.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		503083B20375F162748AB90C /* Pods-Appceptability.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Appceptability.release.xcconfig"; path = "Target Support Files/Pods-Appceptability/Pods-Appceptability.release.xcconfig"; sourceTree = "<group>"; };
 		7690B6EF1EB0EAD04FEDA897 /* Pods-Appceptability.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Appceptability.debug.xcconfig"; path = "Target Support Files/Pods-Appceptability/Pods-Appceptability.debug.xcconfig"; sourceTree = "<group>"; };
+		AC052D0C2407D0A30042189E /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		AC052D0E2407DFE20042189E /* randomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = randomViewController.swift; sourceTree = "<group>"; };
 		AC68530F23F2AB07005E4755 /* Appceptability.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Appceptability.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC68531223F2AB07005E4755 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AC68531423F2AB07005E4755 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -69,6 +73,15 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		AC052D0B2407CFE00042189E /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				ACAD8B3723FE8AD000540CA9 /* Constants.swift */,
+				AC052D0C2407D0A30042189E /* Utilities.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		AC68530623F2AB07005E4755 = {
 			isa = PBXGroup;
 			children = (
@@ -97,7 +110,7 @@
 				AC68531B23F2AB08005E4755 /* Assets.xcassets */,
 				ACF2747C23FD4B530096844A /* GoogleService-Info.plist */,
 				AC68532023F2AB08005E4755 /* Info.plist */,
-				ACAD8B3723FE8AD000540CA9 /* Constants.swift */,
+				AC052D0B2407CFE00042189E /* Helpers */,
 			);
 			path = Appceptability;
 			sourceTree = "<group>";
@@ -113,6 +126,7 @@
 				AC72218923F4141500CA2355 /* demographicsViewController.swift */,
 				AC72218B23F4148F00CA2355 /* questionsViewController.swift */,
 				ACAD8B3923FE90B500540CA9 /* performStudyLoginViewController.swift */,
+				AC052D0E2407DFE20042189E /* randomViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -255,7 +269,9 @@
 				AC9399A223F2E330002B3E07 /* homeScreenViewController.swift in Sources */,
 				AC68531323F2AB07005E4755 /* AppDelegate.swift in Sources */,
 				AC68531523F2AB07005E4755 /* SceneDelegate.swift in Sources */,
+				AC052D0F2407DFE20042189E /* randomViewController.swift in Sources */,
 				ACAD8B3C23FEAC1100540CA9 /* registerTabViewController.swift in Sources */,
+				AC052D0D2407D0A30042189E /* Utilities.swift in Sources */,
 				ACAD8B3823FE8AD000540CA9 /* Constants.swift in Sources */,
 				AC9794C523F2F97400A0E74F /* registerStudyScreenViewController.swift in Sources */,
 				ACAD8B3A23FE90B500540CA9 /* performStudyLoginViewController.swift in Sources */,

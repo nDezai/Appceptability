@@ -67,18 +67,23 @@ class participantsAndSampleSizeViewController: UIViewController {
             if let e = error {
                 print("Error saving data: \(e.localizedDescription)")
             } else {
-                //Create alert
-                let alert = UIAlertController(title: "Save Successful", message: "Your information has been successfully saved", preferredStyle: UIAlertController.Style.alert)
                 
-                //Add action
-                alert.addAction(UIAlertAction(title: "Continue", style: UIAlertAction.Style.default, handler: nil))
-                
-                //Show alert
-                self.present(alert, animated: true, completion: nil)
-                
+                self.alertAppear()
                 self.tabBarController?.selectedIndex = 1
             }
         }
     }
+    // MARK: - Alert Function
     
+    func alertAppear() {
+        
+        //Create alert
+        let alert = UIAlertController(title: "Save Successful", message: "Your information has been successfully saved", preferredStyle: UIAlertController.Style.alert)
+
+        //Add action
+        alert.addAction(UIAlertAction(title: "Continue", style: UIAlertAction.Style.default, handler: nil))
+
+        //Show alert
+        self.present(alert, animated: true, completion: nil)
+    }
 }
