@@ -34,6 +34,8 @@ class participantsAndSampleSizeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        setUpElement()
+        
         participantSlider.addTarget(self, action: #selector(participantSliderValueChanged), for: UIControl.Event.valueChanged)
         sampleSlider.addTarget(self, action: #selector(sampleSliderValueChanged), for: UIControl.Event.valueChanged)
         
@@ -73,7 +75,7 @@ class participantsAndSampleSizeViewController: UIViewController {
             }
         }
     }
-    // MARK: - Alert Function
+    // MARK: - Other Functions
     
     func alertAppear() {
         
@@ -85,5 +87,11 @@ class participantsAndSampleSizeViewController: UIViewController {
 
         //Show alert
         self.present(alert, animated: true, completion: nil)
+    }
+    
+    func setUpElement() {
+        
+        // Style the elements
+        Utilities.styleFilledButton(saveAndContinueButton)
     }
 }

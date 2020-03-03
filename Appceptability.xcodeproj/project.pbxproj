@@ -9,7 +9,9 @@
 /* Begin PBXBuildFile section */
 		195F03A8232BE64ABD19B180 /* Pods_Appceptability.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DBD48FB9EC99A4C718C2416 /* Pods_Appceptability.framework */; };
 		AC052D0D2407D0A30042189E /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC052D0C2407D0A30042189E /* Utilities.swift */; };
-		AC052D0F2407DFE20042189E /* randomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC052D0E2407DFE20042189E /* randomViewController.swift */; };
+		AC4E16A3240E5EC8002047CB /* completedStudiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4E16A2240E5EC8002047CB /* completedStudiesViewController.swift */; };
+		AC4E16A5240E5EDA002047CB /* performStudiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4E16A4240E5EDA002047CB /* performStudiesViewController.swift */; };
+		AC4E16A7240E6C63002047CB /* performTabVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4E16A6240E6C63002047CB /* performTabVC.swift */; };
 		AC68531323F2AB07005E4755 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC68531223F2AB07005E4755 /* AppDelegate.swift */; };
 		AC68531523F2AB07005E4755 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC68531423F2AB07005E4755 /* SceneDelegate.swift */; };
 		AC68531723F2AB07005E4755 /* mainScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC68531623F2AB07005E4755 /* mainScreenViewController.swift */; };
@@ -17,7 +19,6 @@
 		AC68531C23F2AB08005E4755 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC68531B23F2AB08005E4755 /* Assets.xcassets */; };
 		AC68531F23F2AB08005E4755 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC68531D23F2AB08005E4755 /* LaunchScreen.storyboard */; };
 		AC72218823F413AB00CA2355 /* participantsAndSampleSizeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC72218723F413AB00CA2355 /* participantsAndSampleSizeViewController.swift */; };
-		AC72218A23F4141500CA2355 /* demographicsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC72218923F4141500CA2355 /* demographicsViewController.swift */; };
 		AC72218C23F4148F00CA2355 /* questionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC72218B23F4148F00CA2355 /* questionsViewController.swift */; };
 		AC9399A223F2E330002B3E07 /* homeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9399A123F2E330002B3E07 /* homeScreenViewController.swift */; };
 		AC9794C523F2F97400A0E74F /* registerStudyScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9794C423F2F97400A0E74F /* registerStudyScreenViewController.swift */; };
@@ -32,7 +33,9 @@
 		503083B20375F162748AB90C /* Pods-Appceptability.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Appceptability.release.xcconfig"; path = "Target Support Files/Pods-Appceptability/Pods-Appceptability.release.xcconfig"; sourceTree = "<group>"; };
 		7690B6EF1EB0EAD04FEDA897 /* Pods-Appceptability.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Appceptability.debug.xcconfig"; path = "Target Support Files/Pods-Appceptability/Pods-Appceptability.debug.xcconfig"; sourceTree = "<group>"; };
 		AC052D0C2407D0A30042189E /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
-		AC052D0E2407DFE20042189E /* randomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = randomViewController.swift; sourceTree = "<group>"; };
+		AC4E16A2240E5EC8002047CB /* completedStudiesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = completedStudiesViewController.swift; sourceTree = "<group>"; };
+		AC4E16A4240E5EDA002047CB /* performStudiesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = performStudiesViewController.swift; sourceTree = "<group>"; };
+		AC4E16A6240E6C63002047CB /* performTabVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = performTabVC.swift; sourceTree = "<group>"; };
 		AC68530F23F2AB07005E4755 /* Appceptability.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Appceptability.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC68531223F2AB07005E4755 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AC68531423F2AB07005E4755 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -42,7 +45,6 @@
 		AC68531E23F2AB08005E4755 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AC68532023F2AB08005E4755 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AC72218723F413AB00CA2355 /* participantsAndSampleSizeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = participantsAndSampleSizeViewController.swift; sourceTree = "<group>"; };
-		AC72218923F4141500CA2355 /* demographicsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = demographicsViewController.swift; sourceTree = "<group>"; };
 		AC72218B23F4148F00CA2355 /* questionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = questionsViewController.swift; sourceTree = "<group>"; };
 		AC9399A123F2E330002B3E07 /* homeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homeScreenViewController.swift; sourceTree = "<group>"; };
 		AC9794C423F2F97400A0E74F /* registerStudyScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = registerStudyScreenViewController.swift; sourceTree = "<group>"; };
@@ -123,10 +125,11 @@
 				AC9794C423F2F97400A0E74F /* registerStudyScreenViewController.swift */,
 				ACAD8B3B23FEAC1100540CA9 /* registerTabViewController.swift */,
 				AC72218723F413AB00CA2355 /* participantsAndSampleSizeViewController.swift */,
-				AC72218923F4141500CA2355 /* demographicsViewController.swift */,
 				AC72218B23F4148F00CA2355 /* questionsViewController.swift */,
 				ACAD8B3923FE90B500540CA9 /* performStudyLoginViewController.swift */,
-				AC052D0E2407DFE20042189E /* randomViewController.swift */,
+				AC4E16A6240E6C63002047CB /* performTabVC.swift */,
+				AC4E16A2240E5EC8002047CB /* completedStudiesViewController.swift */,
+				AC4E16A4240E5EDA002047CB /* performStudiesViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -264,18 +267,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC72218A23F4141500CA2355 /* demographicsViewController.swift in Sources */,
 				AC68531723F2AB07005E4755 /* mainScreenViewController.swift in Sources */,
 				AC9399A223F2E330002B3E07 /* homeScreenViewController.swift in Sources */,
 				AC68531323F2AB07005E4755 /* AppDelegate.swift in Sources */,
+				AC4E16A3240E5EC8002047CB /* completedStudiesViewController.swift in Sources */,
 				AC68531523F2AB07005E4755 /* SceneDelegate.swift in Sources */,
-				AC052D0F2407DFE20042189E /* randomViewController.swift in Sources */,
 				ACAD8B3C23FEAC1100540CA9 /* registerTabViewController.swift in Sources */,
 				AC052D0D2407D0A30042189E /* Utilities.swift in Sources */,
+				AC4E16A5240E5EDA002047CB /* performStudiesViewController.swift in Sources */,
 				ACAD8B3823FE8AD000540CA9 /* Constants.swift in Sources */,
 				AC9794C523F2F97400A0E74F /* registerStudyScreenViewController.swift in Sources */,
 				ACAD8B3A23FE90B500540CA9 /* performStudyLoginViewController.swift in Sources */,
 				AC72218823F413AB00CA2355 /* participantsAndSampleSizeViewController.swift in Sources */,
+				AC4E16A7240E6C63002047CB /* performTabVC.swift in Sources */,
 				AC72218C23F4148F00CA2355 /* questionsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

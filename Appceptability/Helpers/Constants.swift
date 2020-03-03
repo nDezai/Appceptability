@@ -12,11 +12,6 @@ struct K {
     static let homeSegue1 = "HomeToRegister"
     static let homeSegue2 = "HomeToPerform"
     static let registerSegue = "RegisterToRegTab"
-    static let loginSegue = "LoginToRandomTab"
+    static let loginSegue = "LoginToPerformTab"
     
-    struct Storyboard {
-        
-        static let registerVC = "registerTabViewController"
-        static let performVC = "randomViewController"
-    }
 }
