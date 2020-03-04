@@ -8,7 +8,7 @@
 
 import UIKit
 
-class mainScreenViewController: UIViewController {
+class mainScreenVC: UIViewController {
     
     @IBOutlet weak var continueButton: UIButton!
     

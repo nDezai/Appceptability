@@ -9,7 +9,7 @@
 import UIKit
 import Firebase
 
-class completedStudiesViewController: UIViewController {
+class completedStudiesVC: UIViewController {
 
     @IBOutlet weak var studyNumberLabel: UILabel!
     

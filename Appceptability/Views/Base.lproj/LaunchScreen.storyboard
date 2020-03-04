@@ -16,10 +16,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Appceptability" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1pU-oK-s7j">
-                                <rect key="frame" x="37" y="380" width="340" height="118.5"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="1pU-oK-s7j" secondAttribute="height" multiplier="341:136" id="VRd-Zl-r8D"/>
-                                </constraints>
+                                <rect key="frame" x="37" y="380" width="340" height="136"/>
                                 <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="35"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -28,10 +25,10 @@
                         <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
                         <constraints>
-                            <constraint firstItem="1pU-oK-s7j" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="336" id="3Rd-SZ-4fu"/>
-                            <constraint firstItem="1pU-oK-s7j" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="FPm-eu-HKP"/>
-                            <constraint firstItem="1pU-oK-s7j" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="37" id="GfN-Ve-ZaQ"/>
-                            <constraint firstItem="1pU-oK-s7j" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="T1q-kU-9Gp"/>
+                            <constraint firstItem="1pU-oK-s7j" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="8qd-AG-vOk"/>
+                            <constraint firstItem="1pU-oK-s7j" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="336" id="JbR-dd-E3H"/>
+                            <constraint firstItem="1pU-oK-s7j" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="PS9-zm-NvA"/>
+                            <constraint firstItem="1pU-oK-s7j" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="37" id="Vjg-3n-3kH"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>

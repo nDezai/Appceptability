@@ -9,17 +9,19 @@
 import UIKit
 import Firebase
 
-class performStudiesViewController: UIViewController {
+class performStudiesVC: UIViewController {
 
     @IBOutlet weak var startButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         setUpElement()
     }
     
     @IBAction func startButtonPressed(_ sender: UIButton) {
+        
+        self.performSegue(withIdentifier: K.startStudySegue, sender: self)
     }
     
 // MARK: - Other Functions

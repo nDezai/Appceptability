@@ -9,22 +9,25 @@
 /* Begin PBXBuildFile section */
 		195F03A8232BE64ABD19B180 /* Pods_Appceptability.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DBD48FB9EC99A4C718C2416 /* Pods_Appceptability.framework */; };
 		AC052D0D2407D0A30042189E /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC052D0C2407D0A30042189E /* Utilities.swift */; };
-		AC4E16A3240E5EC8002047CB /* completedStudiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4E16A2240E5EC8002047CB /* completedStudiesViewController.swift */; };
-		AC4E16A5240E5EDA002047CB /* performStudiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4E16A4240E5EDA002047CB /* performStudiesViewController.swift */; };
+		AC4E16A3240E5EC8002047CB /* completedStudiesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4E16A2240E5EC8002047CB /* completedStudiesVC.swift */; };
+		AC4E16A5240E5EDA002047CB /* performStudiesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4E16A4240E5EDA002047CB /* performStudiesVC.swift */; };
 		AC4E16A7240E6C63002047CB /* performTabVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4E16A6240E6C63002047CB /* performTabVC.swift */; };
 		AC68531323F2AB07005E4755 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC68531223F2AB07005E4755 /* AppDelegate.swift */; };
 		AC68531523F2AB07005E4755 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC68531423F2AB07005E4755 /* SceneDelegate.swift */; };
-		AC68531723F2AB07005E4755 /* mainScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC68531623F2AB07005E4755 /* mainScreenViewController.swift */; };
+		AC68531723F2AB07005E4755 /* mainScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC68531623F2AB07005E4755 /* mainScreenVC.swift */; };
 		AC68531A23F2AB07005E4755 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC68531823F2AB07005E4755 /* Main.storyboard */; };
 		AC68531C23F2AB08005E4755 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC68531B23F2AB08005E4755 /* Assets.xcassets */; };
 		AC68531F23F2AB08005E4755 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC68531D23F2AB08005E4755 /* LaunchScreen.storyboard */; };
-		AC72218823F413AB00CA2355 /* participantsAndSampleSizeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC72218723F413AB00CA2355 /* participantsAndSampleSizeViewController.swift */; };
-		AC72218C23F4148F00CA2355 /* questionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC72218B23F4148F00CA2355 /* questionsViewController.swift */; };
-		AC9399A223F2E330002B3E07 /* homeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9399A123F2E330002B3E07 /* homeScreenViewController.swift */; };
-		AC9794C523F2F97400A0E74F /* registerStudyScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9794C423F2F97400A0E74F /* registerStudyScreenViewController.swift */; };
+		AC6E4F1D240FCC98002AB147 /* study1VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6E4F1C240FCC98002AB147 /* study1VC.swift */; };
+		AC6E4F21240FCE55002AB147 /* study2VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6E4F20240FCE55002AB147 /* study2VC.swift */; };
+		AC6E4F23240FCEA5002AB147 /* study3VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6E4F22240FCEA5002AB147 /* study3VC.swift */; };
+		AC72218823F413AB00CA2355 /* participantsAndSampleSizeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC72218723F413AB00CA2355 /* participantsAndSampleSizeVC.swift */; };
+		AC72218C23F4148F00CA2355 /* questionsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC72218B23F4148F00CA2355 /* questionsVC.swift */; };
+		AC9399A223F2E330002B3E07 /* homeScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9399A123F2E330002B3E07 /* homeScreenVC.swift */; };
+		AC9794C523F2F97400A0E74F /* registerStudyScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9794C423F2F97400A0E74F /* registerStudyScreenVC.swift */; };
 		ACAD8B3823FE8AD000540CA9 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACAD8B3723FE8AD000540CA9 /* Constants.swift */; };
-		ACAD8B3A23FE90B500540CA9 /* performStudyLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACAD8B3923FE90B500540CA9 /* performStudyLoginViewController.swift */; };
-		ACAD8B3C23FEAC1100540CA9 /* registerTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACAD8B3B23FEAC1100540CA9 /* registerTabViewController.swift */; };
+		ACAD8B3A23FE90B500540CA9 /* performLoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACAD8B3923FE90B500540CA9 /* performLoginVC.swift */; };
+		ACAD8B3C23FEAC1100540CA9 /* registerTabVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACAD8B3B23FEAC1100540CA9 /* registerTabVC.swift */; };
 		ACF2747D23FD4B530096844A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = ACF2747C23FD4B530096844A /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
@@ -33,24 +36,27 @@
 		503083B20375F162748AB90C /* Pods-Appceptability.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Appceptability.release.xcconfig"; path = "Target Support Files/Pods-Appceptability/Pods-Appceptability.release.xcconfig"; sourceTree = "<group>"; };
 		7690B6EF1EB0EAD04FEDA897 /* Pods-Appceptability.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Appceptability.debug.xcconfig"; path = "Target Support Files/Pods-Appceptability/Pods-Appceptability.debug.xcconfig"; sourceTree = "<group>"; };
 		AC052D0C2407D0A30042189E /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
-		AC4E16A2240E5EC8002047CB /* completedStudiesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = completedStudiesViewController.swift; sourceTree = "<group>"; };
-		AC4E16A4240E5EDA002047CB /* performStudiesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = performStudiesViewController.swift; sourceTree = "<group>"; };
+		AC4E16A2240E5EC8002047CB /* completedStudiesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = completedStudiesVC.swift; sourceTree = "<group>"; };
+		AC4E16A4240E5EDA002047CB /* performStudiesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = performStudiesVC.swift; sourceTree = "<group>"; };
 		AC4E16A6240E6C63002047CB /* performTabVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = performTabVC.swift; sourceTree = "<group>"; };
 		AC68530F23F2AB07005E4755 /* Appceptability.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Appceptability.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC68531223F2AB07005E4755 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AC68531423F2AB07005E4755 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		AC68531623F2AB07005E4755 /* mainScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainScreenViewController.swift; sourceTree = "<group>"; };
+		AC68531623F2AB07005E4755 /* mainScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainScreenVC.swift; sourceTree = "<group>"; };
 		AC68531923F2AB07005E4755 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AC68531B23F2AB08005E4755 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC68531E23F2AB08005E4755 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AC68532023F2AB08005E4755 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AC72218723F413AB00CA2355 /* participantsAndSampleSizeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = participantsAndSampleSizeViewController.swift; sourceTree = "<group>"; };
-		AC72218B23F4148F00CA2355 /* questionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = questionsViewController.swift; sourceTree = "<group>"; };
-		AC9399A123F2E330002B3E07 /* homeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homeScreenViewController.swift; sourceTree = "<group>"; };
-		AC9794C423F2F97400A0E74F /* registerStudyScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = registerStudyScreenViewController.swift; sourceTree = "<group>"; };
+		AC6E4F1C240FCC98002AB147 /* study1VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = study1VC.swift; sourceTree = "<group>"; };
+		AC6E4F20240FCE55002AB147 /* study2VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = study2VC.swift; sourceTree = "<group>"; };
+		AC6E4F22240FCEA5002AB147 /* study3VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = study3VC.swift; sourceTree = "<group>"; };
+		AC72218723F413AB00CA2355 /* participantsAndSampleSizeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = participantsAndSampleSizeVC.swift; sourceTree = "<group>"; };
+		AC72218B23F4148F00CA2355 /* questionsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = questionsVC.swift; sourceTree = "<group>"; };
+		AC9399A123F2E330002B3E07 /* homeScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homeScreenVC.swift; sourceTree = "<group>"; };
+		AC9794C423F2F97400A0E74F /* registerStudyScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = registerStudyScreenVC.swift; sourceTree = "<group>"; };
 		ACAD8B3723FE8AD000540CA9 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		ACAD8B3923FE90B500540CA9 /* performStudyLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = performStudyLoginViewController.swift; sourceTree = "<group>"; };
-		ACAD8B3B23FEAC1100540CA9 /* registerTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = registerTabViewController.swift; sourceTree = "<group>"; };
+		ACAD8B3923FE90B500540CA9 /* performLoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = performLoginVC.swift; sourceTree = "<group>"; };
+		ACAD8B3B23FEAC1100540CA9 /* registerTabVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = registerTabVC.swift; sourceTree = "<group>"; };
 		ACF2747C23FD4B530096844A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -120,16 +126,19 @@
 		AC68532923F2C152005E4755 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				AC68531623F2AB07005E4755 /* mainScreenViewController.swift */,
-				AC9399A123F2E330002B3E07 /* homeScreenViewController.swift */,
-				AC9794C423F2F97400A0E74F /* registerStudyScreenViewController.swift */,
-				ACAD8B3B23FEAC1100540CA9 /* registerTabViewController.swift */,
-				AC72218723F413AB00CA2355 /* participantsAndSampleSizeViewController.swift */,
-				AC72218B23F4148F00CA2355 /* questionsViewController.swift */,
-				ACAD8B3923FE90B500540CA9 /* performStudyLoginViewController.swift */,
+				AC68531623F2AB07005E4755 /* mainScreenVC.swift */,
+				AC9399A123F2E330002B3E07 /* homeScreenVC.swift */,
+				AC9794C423F2F97400A0E74F /* registerStudyScreenVC.swift */,
+				ACAD8B3B23FEAC1100540CA9 /* registerTabVC.swift */,
+				AC72218723F413AB00CA2355 /* participantsAndSampleSizeVC.swift */,
+				AC72218B23F4148F00CA2355 /* questionsVC.swift */,
+				ACAD8B3923FE90B500540CA9 /* performLoginVC.swift */,
 				AC4E16A6240E6C63002047CB /* performTabVC.swift */,
-				AC4E16A2240E5EC8002047CB /* completedStudiesViewController.swift */,
-				AC4E16A4240E5EDA002047CB /* performStudiesViewController.swift */,
+				AC4E16A2240E5EC8002047CB /* completedStudiesVC.swift */,
+				AC4E16A4240E5EDA002047CB /* performStudiesVC.swift */,
+				AC6E4F1C240FCC98002AB147 /* study1VC.swift */,
+				AC6E4F20240FCE55002AB147 /* study2VC.swift */,
+				AC6E4F22240FCEA5002AB147 /* study3VC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -267,20 +276,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC68531723F2AB07005E4755 /* mainScreenViewController.swift in Sources */,
-				AC9399A223F2E330002B3E07 /* homeScreenViewController.swift in Sources */,
+				AC68531723F2AB07005E4755 /* mainScreenVC.swift in Sources */,
+				AC9399A223F2E330002B3E07 /* homeScreenVC.swift in Sources */,
 				AC68531323F2AB07005E4755 /* AppDelegate.swift in Sources */,
-				AC4E16A3240E5EC8002047CB /* completedStudiesViewController.swift in Sources */,
+				AC4E16A3240E5EC8002047CB /* completedStudiesVC.swift in Sources */,
 				AC68531523F2AB07005E4755 /* SceneDelegate.swift in Sources */,
-				ACAD8B3C23FEAC1100540CA9 /* registerTabViewController.swift in Sources */,
+				ACAD8B3C23FEAC1100540CA9 /* registerTabVC.swift in Sources */,
+				AC6E4F1D240FCC98002AB147 /* study1VC.swift in Sources */,
 				AC052D0D2407D0A30042189E /* Utilities.swift in Sources */,
-				AC4E16A5240E5EDA002047CB /* performStudiesViewController.swift in Sources */,
+				AC6E4F23240FCEA5002AB147 /* study3VC.swift in Sources */,
+				AC4E16A5240E5EDA002047CB /* performStudiesVC.swift in Sources */,
 				ACAD8B3823FE8AD000540CA9 /* Constants.swift in Sources */,
-				AC9794C523F2F97400A0E74F /* registerStudyScreenViewController.swift in Sources */,
-				ACAD8B3A23FE90B500540CA9 /* performStudyLoginViewController.swift in Sources */,
-				AC72218823F413AB00CA2355 /* participantsAndSampleSizeViewController.swift in Sources */,
+				AC9794C523F2F97400A0E74F /* registerStudyScreenVC.swift in Sources */,
+				ACAD8B3A23FE90B500540CA9 /* performLoginVC.swift in Sources */,
+				AC72218823F413AB00CA2355 /* participantsAndSampleSizeVC.swift in Sources */,
+				AC6E4F21240FCE55002AB147 /* study2VC.swift in Sources */,
 				AC4E16A7240E6C63002047CB /* performTabVC.swift in Sources */,
-				AC72218C23F4148F00CA2355 /* questionsViewController.swift in Sources */,
+				AC72218C23F4148F00CA2355 /* questionsVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

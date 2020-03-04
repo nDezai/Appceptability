@@ -8,7 +8,7 @@
 
 import UIKit
 
-class homeScreenViewController: UIViewController {
+class homeScreenVC: UIViewController {
 
     @IBOutlet weak var createButton: UIButton!
     @IBOutlet weak var performButton: UIButton!

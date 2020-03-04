@@ -9,7 +9,7 @@
 import UIKit
 import Firebase
 
-class questionsViewController: UIViewController {
+class questionsVC: UIViewController {
     
     @IBOutlet weak var saveAndContinueButton: UIButton!
     

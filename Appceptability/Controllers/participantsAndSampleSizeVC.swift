@@ -9,7 +9,7 @@
 import UIKit
 import Firebase
 
-class participantsAndSampleSizeViewController: UIViewController {
+class participantsAndSampleSizeVC: UIViewController {
     
     @IBOutlet weak var participantSlider: UISlider!
     @IBOutlet weak var participantNumberTF: UITextField!
@@ -33,8 +33,6 @@ class participantsAndSampleSizeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        setUpElement()
         
         participantSlider.addTarget(self, action: #selector(participantSliderValueChanged), for: UIControl.Event.valueChanged)
         sampleSlider.addTarget(self, action: #selector(sampleSliderValueChanged), for: UIControl.Event.valueChanged)

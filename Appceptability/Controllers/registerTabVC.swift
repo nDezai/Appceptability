@@ -9,7 +9,7 @@
 import UIKit
 import Firebase
 
-class registerTabViewController: UITabBarController {
+class registerTabVC: UITabBarController {
     
     override func viewDidLoad() {
         super.viewDidLoad()

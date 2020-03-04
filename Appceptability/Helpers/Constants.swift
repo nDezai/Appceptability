@@ -13,5 +13,8 @@ struct K {
     static let homeSegue2 = "HomeToPerform"
     static let registerSegue = "RegisterToRegTab"
     static let loginSegue = "LoginToPerformTab"
+    static let startStudySegue = "Study1Segue"
+    static let contStudySegue = "Study2Segue"
+    static let endStudySegue = "Study3Segue"
     
 }

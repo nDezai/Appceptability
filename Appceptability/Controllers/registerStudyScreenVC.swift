@@ -9,7 +9,7 @@
 import UIKit
 import Firebase
 
-class registerStudyScreenViewController: UIViewController {
+class registerStudyScreenVC: UIViewController {
     
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
